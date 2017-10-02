@@ -1,0 +1,21 @@
+{
+  "name": "telegramiss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/elrumordelaluz/telegramiss.git",
+  "author": "Lionel T <elrumordelaluz@hotmail.com> (https://elrumordelaluz.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "geolib": "2.0.23",
+    "node-fetch": "1.7.3",
+    "node-geocoder": "3.20.1",
+    "node-telegram-bot-api": "0.28.0"
+  },
+  "scripts": {
+    "start": "nodemon --config nodemon.json index.js",
+    "serve": "NODE_ENV=production node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "1.12.1"
+  }
+}
