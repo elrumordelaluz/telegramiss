@@ -6,10 +6,10 @@
   "author": "Lionel T <elrumordelaluz@hotmail.com> (https://elrumordelaluz.com/)",
   "license": "MIT",
   "dependencies": {
-    "geolib": "2.0.23",
+    "@google/maps": "0.4.3",
     "node-fetch": "1.7.3",
-    "node-geocoder": "3.20.1",
-    "node-telegram-bot-api": "0.28.0"
+    "node-telegram-bot-api": "0.28.0",
+    "tmp": "0.0.33"
   },
   "scripts": {
     "start": "nodemon --config nodemon.json index.js",
