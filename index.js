@@ -14,24 +14,6 @@ bot.on('text', msg => {
     .then(res => res.json())
     .then(({ iss_position: { latitude, longitude }, timestamp }) => {
       console.log({ latitude, longitude })
-      // bot
-      //   .sendMessage(msg.chat.id, 'Welcome', {
-      //     parse_mode: 'Markdown',
-      //     reply_markup: {
-      //       one_time_keyboard: true,
-      //       keyboard: [
-      //         [
-      //           {
-      //             text: 'send location',
-      //             request_location: true,
-      //           },
-      //         ],
-      //         ['Cancel'],
-      //       ],
-      //     },
-      //   })
-
-
       fetch(
         `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${process
           .env.GMAPS_API_KEY}`
